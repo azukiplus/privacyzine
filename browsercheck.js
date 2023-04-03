@@ -36,10 +36,6 @@ function checkBrowser() {
     // Detect Chrome
     let chromeAgent = userAgentString.indexOf("Chrome") > -1;
 
-    // Detect Internet Explorer
-    let IExplorerAgent = userAgentString.indexOf("MSIE") > -1 ||
-        userAgentString.indexOf("rv:") > -1;
-
     // Detect Firefox
     let firefoxAgent = userAgentString.indexOf("Firefox") > -1;
 
@@ -63,14 +59,12 @@ function checkBrowser() {
         document.querySelector(".browser").textContent = "Safari";
     } else if (chromeAgent) {
         document.querySelector(".browser").textContent = "Google Chrome";
-    } else if (IExplorerAgent) {
-        document.querySelector(".browser").textContent = "Internet Explorer/Edge";
     } else if (operaAgent) {
         document.querySelector(".browser").textContent = "Opera";
     } else if (firefoxAgent) {
         document.querySelector(".browser").textContent = "Firefox";
     } else {
-        "I can't detect it right now :(";
+        "Edge or something else?";
     }
     
 }
