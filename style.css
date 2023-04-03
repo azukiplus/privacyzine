@@ -1,0 +1,21 @@
+body {
+    font-family:'Segoe UI', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.lead-txt {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+    }
+    .lead, .lead-txt {
+        font-size: 18px;
+    }
+  }
